@@ -12,7 +12,7 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"pandoc:publications": "export base='src/routes/publications' && pandoc -t markdown_strict --citeproc $base/pandoc-input.md -o $base/pandoc-output.md --bibliography $base/publications.bib",
-		"deploy": "gh-pages -d build"
+		"deploy": "npm run build && node ./gh-pages.js"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.25.0",
