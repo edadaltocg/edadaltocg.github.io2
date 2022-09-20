@@ -18,7 +18,11 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: null
+		})
 	},
 	extensions: ['.svelte', '.md', '.svx']
 };

@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Eduardo Dadalto</title>
+	<title>Eduardo Dadalto</title>
 </svelte:head>
 
 <Header />
