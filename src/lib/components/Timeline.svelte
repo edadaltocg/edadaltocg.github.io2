@@ -47,8 +47,8 @@
 			>Research Intern between April and October 2020</time
 		>
 		<p class="text-base font-normal text-gray-500 dark:text-gray-400">
-			Six months internship working on binarizing the weights of neural networks for computer vision
-			on the DEEL Team.
+			I did a six months internship working on binarizing the weights of neural networks for
+			computer vision on the DEEL Team.
 		</p>
 	</li>
 	<li class="mb-10 ml-6">

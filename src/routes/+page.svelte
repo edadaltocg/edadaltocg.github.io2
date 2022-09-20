@@ -15,7 +15,10 @@
 		<div class="card max-w-sm justify-center place-items-center">
 			<article class="prose container p-4">
 				<h3 class="text-accent-content">Welcome to Personal Website!</h3>
-				<p>My name is Eduardo Dadalto Câmara Gomes and I'm a PhD Student in Safety AI.</p>
+				<p>
+					My name is Eduardo Dadalto Câmara Gomes and I'm a PhD Student in Machine Learning at
+					Université Paris Saclay.
+				</p>
 			</article>
 			<Social />
 		</div>
