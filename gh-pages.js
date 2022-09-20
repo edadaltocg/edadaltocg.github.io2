@@ -4,7 +4,7 @@ publish(
     'build',
     {
         branch: 'master',
-        repo: 'https://github.com/edadaltocg/edaadaltocg.github.io',
+        repo: 'https://github.com/edadaltocg/edadaltocg.github.io',
         user: {
             name: 'Eduardo Dadalto',
             email: 'edadaltocg@gmail.com'
