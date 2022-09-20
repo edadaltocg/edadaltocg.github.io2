@@ -1,5 +1,11 @@
 <script>
-  import "../app.css";
+	import '../app.css';
+	import Header from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<slot />
+<Header />
+<main class="flex container mx-auto justify-evenly">
+	<slot />
+</main>
+<Footer />
