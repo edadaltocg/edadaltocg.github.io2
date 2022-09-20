@@ -1,4 +1,0 @@
----
-bibliography: 'publications.bib'
-nocite: '@*'
----
