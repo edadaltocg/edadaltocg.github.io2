@@ -3,6 +3,7 @@
 	import Social from '$lib/components/Social.svelte';
 	import Timeline from '$lib/components/Timeline.svelte';
 	console.log(publicVariables);
+	export let data: import('./$types').PageData;
 </script>
 
 <div class="my-2">
@@ -36,27 +37,9 @@
 
 	<div>
 		<article class="prose container p-4">
-			<h1 class="text-accent-content">Publications</h1>
-			<p>Here are some of my publications.</p>
-			<p>
-				Pierre Colombo, <span class="italic">Eduardo Dadalto</span>, Guillaume Staerman, Nathan
-				Noiry, and Pablo Piantanida. “Beyond Mahalanobis Distance for Textual OOD Detection”. In
-				Advances in Neural Information Processing Systems 35 (NeurIPS 2022).
-				https://openreview.net/forum?id=mfwdY3U_9ea. 2022
-			</p>
-
-			<p>
-				<span class="talic">Eduardo Dadalto</span>, Florence Alberge, Pierre Duhamel, and Pablo
-				Piantanida. “Igeood: An Information Geometry Approach to Out-of-Distribution Detection.” In
-				International Conference on Learning Representations.
-				https://openreview.net/forum?id=mfwdY3U_9ea. 2022.
-			</p>
-
-			<p>
-				Meryem Benammar, <span class="italic">Eduardo Dadalto</span>, and Pablo Piantanida.
-				“CSI-Aided Robust Neural-Based Decoders.” In 2021 11th International Symposium on Topics in
-				Coding (ISTC), 1–5. https://doi.org/10.1109/ISTC49272.2021.9594117. 2021.
-			</p>
+			<h1 class="text-accent-content">Recent Publications</h1>
+			<!-- <p>Here are some of my publications.</p> -->
+			<svelte:component this={data.publications.default} />
 		</article>
 	</div>
 </div>

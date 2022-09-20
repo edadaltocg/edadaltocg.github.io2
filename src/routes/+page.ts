@@ -1,5 +1,7 @@
-export function load(event) {
+export async function load() {
+	const publications = await import('./publications/publications.md');
+
 	return {
-		some: 'data'
+		publications
 	};
 }

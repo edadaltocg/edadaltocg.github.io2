@@ -20,7 +20,10 @@
 		<time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
 			>Started on November 1th, 2020</time
 		>
-		<p class="mb-4">Quick text about my PhD.</p>
+		<p class="mb-4">
+			I am currently working towards safer Deep Learning algorithms, out-of-distribution detection
+			and misclassification detection.
+		</p>
 	</li>
 	<li class="mb-10 ml-6">
 		<span
@@ -41,10 +44,11 @@
 		</span>
 		<h3 class="mb-1 text-lg font-semibold">IRT-Saint Exupéry</h3>
 		<time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-			>Research Intern</time
+			>Research Intern between April and October 2020</time
 		>
 		<p class="text-base font-normal text-gray-500 dark:text-gray-400">
-			Quick text about my Internship at DEEL.
+			Six months internship working on binarizing the weights of neural networks for computer vision
+			on the DEEL Team.
 		</p>
 	</li>
 	<li class="mb-10 ml-6">
@@ -66,9 +70,11 @@
 		</span>
 		<h3 class="mb-1 text-lg font-semibold">MSc in Applied Mathematics</h3>
 		<time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-			>Graduated on 2020</time
+			>Class of 2020</time
 		>
-		<p class="text-base font-normal text-gray-500 dark:text-gray-400">Quick text about my MSc.</p>
+		<p class="text-base font-normal text-gray-500 dark:text-gray-400">
+			Masters in operations research and data science.
+		</p>
 	</li>
 	<li class="ml-6">
 		<span
@@ -89,8 +95,10 @@
 		</span>
 		<h3 class="mb-1 text-lg font-semibold">BSc in Aerospace Engineering</h3>
 		<time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-			>Graduated on 2020 with a Double Degree</time
+			>Class of 2020 with a Double Degree</time
 		>
-		<p class="text-base font-normal text-gray-500 dark:text-gray-400" />
+		<p class="text-base font-normal text-gray-500 dark:text-gray-400">
+			Specialization in Autonomous Systems.
+		</p>
 	</li>
 </ol>
