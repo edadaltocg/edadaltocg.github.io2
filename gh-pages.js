@@ -12,6 +12,6 @@ publish(
 		dotfiles: true
 	},
 	() => {
-		console.log('Deploy Complete!');
+		console.log('Deploy Complete! to https://edadaltocg.github.io');
 	}
 );

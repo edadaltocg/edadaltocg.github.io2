@@ -3,7 +3,7 @@
 	import { publicVariables } from '$lib/assets/public';
 </script>
 
-<article class="prose">
+<article class="prose-sm md:prose mx-auto px-2">
 	<h1>{data.metadata.title}</h1>
 	<p>Last modified in <span>{data.metadata.date}.</span></p>
 	<svelte:component this={data.content} />

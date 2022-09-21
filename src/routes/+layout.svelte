@@ -9,7 +9,7 @@
 </svelte:head>
 
 <Header />
-<main class="flex container mx-auto justify-evenly">
+<main class="flex sm:container justify-evenly">
 	<slot />
 </main>
 <Footer />

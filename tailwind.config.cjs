@@ -14,7 +14,8 @@ module.exports = {
 				light: {
 					...require('daisyui/src/colors/themes')['[data-theme=lofi]'],
 					primary: 'blue',
-					'primary-focus': 'mediumblue'
+					'primary-focus': 'mediumblue',
+					'accent-content': 'black'
 				}
 			},
 			{
