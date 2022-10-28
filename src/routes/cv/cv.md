@@ -9,8 +9,8 @@ I am a PhD student at CentraleSupélec CNRS Université Paris Saclay advised by 
 ## Education
 
 | PhD Student in Machine Learning              | Paris, FR, Nov 2020 - present |
-| :------------------------------------------- | --------------------: |
-| CentraleSupélec CNRS Université Paris Saclay |                       |
+| :------------------------------------------- | ----------------------------: |
+| CentraleSupélec CNRS Université Paris Saclay |                               |
 
 - I'm working mainly with out-of-distribution and misclassification detection methods for Deep Learning algorithms with applications on computer vision and NLP.
 - This thesis is partially financed by the AI for Digital Automation (AIDA) project led by IBM with an ambition to enable companies to improve their performance by integrating artificial intelligence into their operational systems.
