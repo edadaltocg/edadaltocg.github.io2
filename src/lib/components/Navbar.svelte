@@ -7,9 +7,9 @@
 			<li tabindex="0">
 				<a href="/cv"> CV </a>
 			</li>
-			<li tabindex="0">
+			<!-- <li tabindex="0">
 				<a href="/blog"> Blog </a>
-			</li>
+			</li> -->
 		</ul>
 	</div>
 	<div class="navbar-end">
@@ -19,9 +19,9 @@
 				<li tabindex="0">
 					<a href="/cv"> CV </a>
 				</li>
-				<li tabindex="0">
+				<!-- <li tabindex="0">
 					<a href="/blog"> Blog </a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 	</div>
