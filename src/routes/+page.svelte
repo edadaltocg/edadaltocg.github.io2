@@ -25,7 +25,7 @@
 
 	<div class="divider" />
 	<!--News-->
-<!-- 
+	<!-- 
 	<div>
 		<article class="prose-sm md:prose">
 			<h2>Recent News</h2>
@@ -65,7 +65,9 @@
 		<article class="prose-sm md:prose mb-8">
 			<h2 class="text-accent-content">Contact Me</h2>
 			<p>
-				You can contact me via email at <a href="mailto:{publicVariables.email}">{publicVariables.email}</a>
+				You can contact me via email at <a href="mailto:{publicVariables.email}"
+					>{publicVariables.email}</a
+				>
 			</p>
 		</article>
 	</div>
