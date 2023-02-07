@@ -13,22 +13,37 @@
 			</div>
 		</div>
 		<div class="card max-w-sm justify-center place-items-center">
-			<article class="prose-sm md:prose px-2 md:mb-2">
-				<h3 class="text-accent-content">Welcome to Personal Website!</h3>
-				<p>
-					My name is Eduardo Dadalto Câmara Gomes and I'm a PhD Student in Machine Learning at
-					Université Paris Saclay.
-				</p>
+			<article class="prose-sm md:prose md:mb-2">
+				<h3 class="text-accent-content">{data.bio.name}, {data.bio.title}</h3>
+				<p>{data.bio.bio}</p>
 			</article>
-			<Social />
+			<div class="mt-2">
+				<Social />
+			</div>
 		</div>
 	</div>
 
 	<div class="divider" />
-	<!--Introduce my projects here-->
+	<!--News-->
+<!-- 
+	<div>
+		<article class="prose-sm md:prose">
+			<h2>Recent News</h2>
+			<ul>
+				{#each data.news as item}
+				<li>
+					<table>
+						<p>{item.date}</p>
+						<p>{item.description}</p>
+					</table>
+				</li>
+				{/each}
+			</ul>
+		</article>
+	</div> -->
 
 	<div>
-		<article class="prose-sm md:prose px-2">
+		<article class="prose-sm md:prose">
 			<Timeline />
 		</article>
 	</div>
@@ -37,10 +52,21 @@
 	<div class="divider" />
 
 	<div>
-		<article class="prose-sm md:prose px-2 mb-8">
-			<h1 class="text-accent-content">Recent Publications</h1>
+		<article class="prose-sm md:prose mb-8">
+			<h2 class="text-accent-content">Recent Publications</h2>
 			<!-- <p>Here are some of my publications.</p> -->
 			<svelte:component this={data.publications.default} />
+		</article>
+	</div>
+
+	<!-- Contact me -->
+	<div class="divider" />
+	<div class="">
+		<article class="prose-sm md:prose mb-8">
+			<h2 class="text-accent-content">Contact Me</h2>
+			<p>
+				You can contact me via email at <a href="mailto:{publicVariables.email}">{publicVariables.email}</a>
+			</p>
 		</article>
 	</div>
 </div>

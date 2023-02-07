@@ -1,6 +1,6 @@
 ---
 title: CV
-date: '2022-09-19'
+date: '2023-01-30'
 author: Eduardo Dadalto
 ---
 
