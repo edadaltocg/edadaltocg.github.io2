@@ -2,7 +2,7 @@
 	export let data: import('./$types').PageData;
 </script>
 
-<article class="prose-sm md:prose mx-auto">
+<article class="mx-auto">
 	<h1>{data.metadata.title}</h1>
 	<a href="cv.pdf" class="underline">pdf link</a>
 	<p>Last modified in <span>{data.metadata.date}.</span></p>

@@ -10,7 +10,9 @@
 
 <div class="min-h-screen flex flex-col">
 	<Header />
-	<main class="flex grow container justify-evenly h-full mx-auto px-2 md:px-0">
+	<main
+		class="prose-sm md:prose md:px-2 flex grow min-w-full md:container md:min-w-0 md:max-w-4xl justify-evenly h-full mx-auto px-2 md:px-0"
+	>
 		<slot />
 	</main>
 	<Footer />

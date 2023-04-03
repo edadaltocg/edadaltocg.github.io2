@@ -4,7 +4,7 @@
 	export let data: import('./$types').PageData;
 </script>
 
-<article class="prose-sm md:prose">
+<article class="">
 	<h1>{data.about.metadata.title}</h1>
 	<svelte:component this={data.about.default} />
 

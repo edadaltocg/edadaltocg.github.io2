@@ -8,12 +8,12 @@
 <div class="my-2">
 	<div class="sm:flex place-items-center justify-center space-x-4 sm:space-x-8">
 		<div class="flex justify-center">
-			<img class="rounded-full w-32 sm:w-48" alt="Profile" src="profile_picture.jpeg" />
+			<img class="rounded-full w-32 sm:max-w-sm" alt="Profile" src="profile_picture.jpeg" />
 		</div>
 		<div class="card justify-center place-items-center">
-			<article class="prose-sm md:prose mb-2">
-				<h1 class="text-accent-content mb-1">{data.bio.name}</h1>
-				<h3 class="mb-1">{data.bio.title}</h3>
+			<article class="mb-2">
+				<h1 class="text-accent-content">{data.bio.name}</h1>
+				<h3>{data.bio.title}</h3>
 				<p>{@html data.bio.bio}</p>
 			</article>
 			<div class="mt-2">
@@ -24,8 +24,8 @@
 
 	<div class="divider" />
 	<!-- Interests -->
-	<article class="prose-sm md:prose">
-		<h2 class="text-accent-content">Research Interests</h2>
+	<article>
+		<h2 class=" mb-0 mt-0 text-accent-content">Research Interests</h2>
 		<ul class="flex">
 			{#each data.interests as item}
 				<li class="flex justify-center place-items-center mx-4">
@@ -36,7 +36,7 @@
 	</article>
 
 	<!--News-->
-	<article class="prose-sm md:prose mb-8">
+	<article class="mb-8">
 		<h2 class="text-accent-content">News</h2>
 		<table class="flex space-x-1">
 			<tbody>
@@ -53,7 +53,7 @@
 	<!--Introduce my Publications here-->
 	<div class="divider" />
 
-	<article class="prose-sm md:prose mb-8">
+	<article class="mb-8">
 		<h2 class="text-accent-content">Recent Publications</h2>
 		<!-- <p>Here are some of my publications.</p> -->
 		<p>
@@ -66,7 +66,7 @@
 
 	<!-- Contact me -->
 	<div class="divider" />
-	<article class="prose-sm md:prose mb-8">
+	<article class="mb-8">
 		<h2 class="text-accent-content">Contact</h2>
 		<p>
 			You can contact me via email at
