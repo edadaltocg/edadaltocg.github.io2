@@ -1,5 +1,5 @@
-<script>
-	export let data;
+<script lang="ts">
+	// export const data: import('./$types').PageData;
 </script>
 
 <article class="prose">

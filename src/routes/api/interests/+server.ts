@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit';
-import bio from './bio.json';
+import data from './interests.json';
 
 export const GET = async () => {
-	return json(bio);
+	return json(data);
 };

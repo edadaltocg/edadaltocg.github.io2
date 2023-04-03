@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let data;
+	export let data: import('./$types').PageData;
 </script>
 
 <article class="prose">

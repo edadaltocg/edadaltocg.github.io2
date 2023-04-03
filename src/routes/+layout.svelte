@@ -8,8 +8,10 @@
 	<title>Eduardo Dadalto</title>
 </svelte:head>
 
-<Header />
-<main class="flex container justify-evenly mx-auto px-2 md:px-0">
-	<slot />
-</main>
-<Footer />
+<div class="min-h-screen flex flex-col">
+	<Header />
+	<main class="flex grow container justify-evenly h-full mx-auto px-2 md:px-0">
+		<slot />
+	</main>
+	<Footer />
+</div>

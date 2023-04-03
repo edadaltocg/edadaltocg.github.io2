@@ -6,16 +6,15 @@
 </script>
 
 <div class="my-2">
-	<div class="flex place-items-center justify-center space-x-4 p-4">
-		<div class="avatar">
-			<div class="rounded-full w-32 sm:w-48">
-				<img alt="Profile" src="profile_picture.jpeg" />
-			</div>
+	<div class="sm:flex place-items-center justify-center space-x-4 sm:space-x-8">
+		<div class="flex justify-center">
+			<img class="rounded-full w-32 sm:w-48" alt="Profile" src="profile_picture.jpeg" />
 		</div>
-		<div class="card max-w-sm justify-center place-items-center">
-			<article class="prose-sm md:prose md:mb-2">
-				<h3 class="text-accent-content">{data.bio.name}, {data.bio.title}</h3>
-				<p>{data.bio.bio}</p>
+		<div class="card justify-center place-items-center">
+			<article class="prose-sm md:prose mb-2">
+				<h1 class="text-accent-content mb-1">{data.bio.name}</h1>
+				<h3 class="mb-1">{data.bio.title}</h3>
+				<p>{@html data.bio.bio}</p>
 			</article>
 			<div class="mt-2">
 				<Social />
@@ -24,51 +23,55 @@
 	</div>
 
 	<div class="divider" />
-	<!--News-->
-	<!-- 
-	<div>
-		<article class="prose-sm md:prose">
-			<h2>Recent News</h2>
-			<ul>
-				{#each data.news as item}
-				<li>
-					<table>
-						<p>{item.date}</p>
-						<p>{item.description}</p>
-					</table>
+	<!-- Interests -->
+	<article class="prose-sm md:prose">
+		<h2 class="text-accent-content">Research Interests</h2>
+		<ul class="flex">
+			{#each data.interests as item}
+				<li class="flex justify-center place-items-center mx-4">
+					<p>{item}</p>
 				</li>
-				{/each}
-			</ul>
-		</article>
-	</div> -->
+			{/each}
+		</ul>
+	</article>
 
-	<div>
-		<article class="prose-sm md:prose">
-			<Timeline />
-		</article>
-	</div>
+	<!--News-->
+	<article class="prose-sm md:prose mb-8">
+		<h2 class="text-accent-content">News</h2>
+		<table class="flex space-x-1">
+			<tbody>
+				{#each data.news as item}
+					<tr>
+						<th class="text-accent-content w-20">{item.date}</th>
+						<td>{@html item.description}</td>
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+	</article>
 
 	<!--Introduce my Publications here-->
 	<div class="divider" />
 
-	<div>
-		<article class="prose-sm md:prose mb-8">
-			<h2 class="text-accent-content">Recent Publications</h2>
-			<!-- <p>Here are some of my publications.</p> -->
-			<svelte:component this={data.publications.default} />
-		</article>
-	</div>
+	<article class="prose-sm md:prose mb-8">
+		<h2 class="text-accent-content">Recent Publications</h2>
+		<!-- <p>Here are some of my publications.</p> -->
+		<p>
+			For a complete list, please check my <a href={publicVariables.googleScholarProfile}
+				>Google Scholar</a
+			> page.
+		</p>
+		<svelte:component this={data.publications.default} />
+	</article>
 
 	<!-- Contact me -->
 	<div class="divider" />
-	<div class="">
-		<article class="prose-sm md:prose mb-8">
-			<h2 class="text-accent-content">Contact Me</h2>
-			<p>
-				You can contact me via email at <a href="mailto:{publicVariables.email}"
-					>{publicVariables.email}</a
-				>
-			</p>
-		</article>
-	</div>
+	<article class="prose-sm md:prose mb-8">
+		<h2 class="text-accent-content">Contact</h2>
+		<p>
+			You can contact me via email at
+			<a href="mailto:{publicVariables.email}">{publicVariables.email}</a>. Happy to discuss new
+			projects and collaborations.
+		</p>
+	</article>
 </div>

@@ -1,0 +1,87 @@
+[
+	{
+		"date": "2023-04",
+		"title": "PhD in Machine Learning",
+		"description": "I am currently looking for a summer internship on a research laboratory in the industry."
+	},
+	{
+		"date": "2023-01",
+		"title": "software",
+		"description": "Together with colleagues, released <a href='https://github.com/icannos/Todd'>Todd</a>: open-source library for text out-of-distribution detection built on top of the Huggingface Transformers library."
+	},
+	{
+		"date": "2022-09",
+		"title": "paper",
+		"description": "Our work entitled “Beyond Mahalanobis Distance for Textual OOD Detection” has been accepted to appear in the NeurIPS 2022 Conference."
+	},
+	{
+		"date": "2022-12",
+		"title": "service",
+		"description": "Will service as a reviewer for the CVPR 2023 Conference."
+	},
+	{
+		"date": "2022-04",
+		"title": "talk",
+		"description": "Gave a talk at a poster session of the NeurIPS 2022 Conference."
+	},
+	{
+		"date": "2022-11",
+		"title": "service",
+		"description": "Will attend the NeurIPS 2022 Conference in New Orleans, LA, USA."
+	},
+	{
+		"date": "2019-10",
+		"title": "position",
+		"description": "I am happy to start a research internship at the International Laboratory on Learning Systems (ILLS) in partnership with McGill University, ÉTS Montreal, Mila – Quebec AI Institute, CNRS and Université Paris-Saclay."
+	},
+	{
+		"date": "2022-04",
+		"title": "talk",
+		"description": "Gave a talk at a poster session of the ICLR 2022 Conference."
+	},
+	{
+		"date": "2022-04",
+		"title": "paper",
+		"description": "I will be attending ICLR 2022 Conference virtually."
+	},
+	{
+		"date": "2022-01",
+		"title": "paper",
+		"description": "Our work entitled “IGEOOD: An Information Geometry Approach to Out-of-Distribution Detection” has been accepted to appear in the ICLR 2022 Conference."
+	},
+	{
+		"date": "2021-10",
+		"title": "paper",
+		"description": "Our work entitled “IGEOOD: An Information Geometry Approach to Out-of-Distribution Detection” has been accepted to appear in the NeurIPS 2021 DistShift Workshop."
+	},
+	{
+		"date": "2021-08",
+		"title": "paper",
+		"description": "Our work entitled “CSI-Aided Robust Neural-Based Decoders” has been accepted to appear in the 11th International Symposium on Topics in Coding (ISTC)."
+	},
+	{
+		"date": "2021-05",
+		"title": "service",
+		"description": "Will service as a reviewer for the NeurIPS 2021 Conference."
+	},
+	{
+		"date": "2020-10",
+		"title": "PhD in Machine Learning",
+		"description": "I am excited to start my PhD in Machine Learning at CentraleSupélec."
+	},
+	{
+		"date": "2020-10",
+		"title": "IRT-Saint Exupéry",
+		"description": "Finished a research internship on the DEEL Team working on binarizing the weights of neural networks."
+	},
+	{
+		"date": "2020-10",
+		"title": "MSc in Applied Mathematics'",
+		"description": "Obtained my master's degree at <a href='https://www.isae-supaero.fr/en/'>ISAE-SUPAERO</a> in Applied Mathematics in Data Science and Operations Research."
+	},
+	{
+		"date": "2020-10",
+		"title": "BSc in Aerospace Engineering",
+		"description": "Graduated from the <a href='http://www.ita.br/'>Instituto Tecnológico de Aeronáutica (ITA)</a> in Brazil."
+	}
+]
