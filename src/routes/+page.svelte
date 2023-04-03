@@ -16,10 +16,10 @@
 				<h3>{data.bio.title}</h3>
 				<p>{@html data.bio.bio}</p>
 			</article>
-			<div class="mt-2">
-				<Social />
-			</div>
 		</div>
+	</div>
+	<div class="justify-center mt-2 flex">
+		<Social />
 	</div>
 
 	<div class="divider" />
