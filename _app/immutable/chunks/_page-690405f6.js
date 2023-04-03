@@ -1,0 +1,1 @@
+import{_ as t}from"./preload-helper-aa6bc0ce.js";async function o({fetch:e}){return{about:await t(()=>import("./about-6f4d4af5.js"),["about-6f4d4af5.js","index-4badbe16.js"],import.meta.url)}}const _=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{_,o as l};

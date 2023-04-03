@@ -15,10 +15,9 @@
 	<link rel="modulepreload" href="./_app/immutable/chunks/public-b1a2d20f.js">
 	<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-b8ee4d7c.js">
 	<link rel="modulepreload" href="./_app/immutable/chunks/_layout-1daba58d.js">
-	<link rel="modulepreload" href="./_app/immutable/components/pages/blog/_layout.svelte-680ef4df.js">
-	<link rel="modulepreload" href="./_app/immutable/components/pages/blog/_page.svelte-5ea24744.js">
-	<link rel="modulepreload" href="./_app/immutable/modules/pages/blog/_page.ts-a65aeebe.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/_page-9a376299.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/about/_page.svelte-154063ef.js">
+	<link rel="modulepreload" href="./_app/immutable/modules/pages/about/_page.ts-7e39d42a.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/_page-690405f6.js">
 	</head>
 	<body>
 		<div>
@@ -34,8 +33,15 @@
 			<ul tabindex="0" class="dropdown-content menu p-4 mx-auto shadow bg-base-100 w-screen"><li tabindex="0"><a href="/about">About </a>
 					<a href="/cv">CV </a></li>
 				</ul></div></div></div>
-	<main class="flex grow container justify-evenly h-full mx-auto px-2 md:px-0"><div class="flex h-screen place-items-center"><article class="prose"><h1>Coming soon...</h1>
-	</article></div></main>
+	<main class="flex grow container justify-evenly h-full mx-auto px-2 md:px-0"><article class="prose-sm md:prose"><h1>About</h1>
+	<p>I’m currently pursuing a PhD in Machine Learning at CentraleSupélec-Université Paris-Saclay, where I work under the guidance of Prof. Pablo Piantanida. My research is focused on developing safer deep learning algorithms, with a particular emphasis on out-of-distribution detection, robustness, and uncertainty detection. Through my work, I hope to contribute towards a future where AI is leveraged for the greater good of society.</p>
+<p>Prior to my doctoral studies, I obtained a bachelor’s degree in Aerospace Engineering from the Instituto Tecnológico de Aeronáutica (ITA). Following that, I moved to France after being awarded an excellence scholarship to pursue a master’s degree in Data Science and Applied Mathematics from ISAE-SUPAERO</p>
+
+	<h2 class="text-accent-content">Contact</h2>
+	<p>You can contact me via email at
+		<a href="mailto:edadaltocg@gmail.com">edadaltocg@gmail.com</a>. Happy to discuss new
+		projects and collaborations.
+	</p></article></main>
 	<footer class="footer bg-base-200 sm:flex sm:justify-between footer-center p-4 text-base-content"><p>© 2023 Eduardo Dadalto</p>
 	<div class="flex space-x-3"><a href="https://github.com/edadaltocg"><button class="flex place-items-center justify-center bg-secondary rounded-full w-8 h-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-white fill-transparent w-5 h-5 feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></button></a>
 	<a href="https://linkedin.com/in/edadaltocg"><button class="flex place-items-center justify-center bg-secondary rounded-full w-8 h-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="stroke-white w-5 h-5 feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></button></a>
@@ -44,7 +50,7 @@
 	<a href="mailto:edadaltocg@gmail.com"><button class="flex place-items-center justify-center bg-secondary rounded-full w-8 h-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-white w-5 h-5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></button></a></div></footer></div>
 
 
-		<script type="module" data-sveltekit-hydrate="1axuq10">
+		<script type="module" data-sveltekit-hydrate="gxqfes">
 		import { start } from "./_app/immutable/start-901990a4.js";
 
 		start({
@@ -52,17 +58,17 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				node_ids: [0, 2, 5],
+				node_ids: [0, 4],
 				params: {},
-				routeId: "blog",
-				data: (function(a){return [a,a,a]}(null)),
+				routeId: "about",
+				data: (function(a){return [a,a]}(null)),
 				form: null
 			},
 			paths: {"base":"","assets":""},
-			target: document.querySelector('[data-sveltekit-hydrate="1axuq10"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="gxqfes"]').parentNode,
 			trailing_slash: "never"
 		});
 	</script>
-	<script type="application/json" data-sveltekit-fetched data-url="/api/posts">{"status":200,"statusText":"","headers":{},"body":"[{\"metadata\":{\"title\":\"Post One\",\"date\":\"2021-12-14\",\"published\":true},\"path\":\"/blog/1\"}]"}</script></div>
+	</div>
 	</body>
 </html>
