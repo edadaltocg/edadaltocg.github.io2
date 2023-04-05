@@ -12,10 +12,10 @@
 	<h2>Profiles</h2>
 	<ul>
 		<li>
-			<a href={publicVariables.githubProfile}>Github</a>
+			<a href="https://github.com/{publicVariables.githubProfile}">Github</a>
 		</li>
 		<li>
-			<a href={publicVariables.linkedinProfile}>LinkedIn</a>
+			<a href="https://linkedin.com/in/{publicVariables.linkedinProfile}">LinkedIn</a>
 		</li>
 		<li>
 			<a href={publicVariables.googleScholarProfile}>Google Scholar</a>
