@@ -19,6 +19,7 @@
 			/>
 		</svg>
 	</Icon>
+	<Icon href={publicVariables.huggingfaceProfile}>🤗</Icon>
 	<Icon href="https://linkedin.com/in/{publicVariables.linkedinProfile}">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
