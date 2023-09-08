@@ -1,18 +1,17 @@
-
 [
-    {
-        "date": "2020-10",
-        "title": "IRT-Saint Exupéry",
-        "description": "Finished a research internship on the DEEL Team working on binarizing the weights of neural networks."
-    },
-    {
-        "date": "2020-10",
-        "title": "MSc in Applied Mathematics'",
-        "description": "Obtained my master's degree at <a href='https://www.isae-supaero.fr/en/'>ISAE-SUPAERO</a> in Applied Mathematics in Data Science and Operations Research."
-    },
-    {
-        "date": "2020-10",
-        "title": "BSc in Aerospace Engineering",
-        "description": "Graduated from the <a href='http://www.ita.br/'>Instituto Tecnológico de Aeronáutica (ITA)</a> in Brazil."
-    }
+	{
+		"date": "2020-10",
+		"title": "IRT-Saint Exupéry",
+		"description": "Finished a research internship on the DEEL Team working on binarizing the weights of neural networks."
+	},
+	{
+		"date": "2020-10",
+		"title": "MSc in Applied Mathematics'",
+		"description": "Obtained my master's degree at <a href='https://www.isae-supaero.fr/en/'>ISAE-SUPAERO</a> in Applied Mathematics in Data Science and Operations Research."
+	},
+	{
+		"date": "2020-10",
+		"title": "BSc in Aerospace Engineering",
+		"description": "Graduated from the <a href='http://www.ita.br/'>Instituto Tecnológico de Aeronáutica (ITA)</a> in Brazil."
+	}
 ]
