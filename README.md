@@ -27,8 +27,22 @@ You can preview the production build with `npm run preview`.
 
 ## Publishing
 
-To publish the website to github pages, plase run
+To publish and host the website on github pages, run:
 
 ```bash
 npm run deploy
 ```
+
+## Pattern
+
+...
+
+## Dynamic Content
+
+None. Because the used adapter is for server side rendering
+
+## API Endpoints
+
+## Static Content Endpoints
+
+## Analytics

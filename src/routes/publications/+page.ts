@@ -1,10 +1,10 @@
 export async function load() {
-	const post = await import('./publications.md');
-	const metadata = post.metadata;
-	const content = post.default;
+  const post = await import('./publications.md');
+  const metadata = post.metadata;
+  const content = post.default;
 
-	return {
-		metadata,
-		content
-	};
+  return {
+    metadata,
+    content
+  };
 }
