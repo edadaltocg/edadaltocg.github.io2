@@ -1,0 +1,19 @@
+{
+  "name": "Svelte Remote Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postStartCommand": "zsh /workspaces/portfolio/.devcontainer/session.sh",
+  "postCreateCommand": "zsh /workspaces/portfolio/.devcontainer/dotfiles.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "svelte.svelte-vscode",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "GitHub.copilot",
+        "Postman.postman-for-vscode"
+      ]
+    }
+  }
+}
