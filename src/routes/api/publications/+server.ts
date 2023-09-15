@@ -5,7 +5,7 @@ export const GET = async ({ url }) => {
   // console.log(url);
   const pathname = url.pathname;
   return json({ pathname });
-}
+};
 
 // export const GET = async ({ url }) => {
 //   console.log(url);

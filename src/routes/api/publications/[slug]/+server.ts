@@ -4,10 +4,9 @@ import { json } from '@sveltejs/kit';
 export const GET = async ({ url }) => {
   // console.log(url);
   return json({ pathname: url.pathname });
-}
+};
 
 // import assetAsString from '/src/routes/api/publications/igeood2022/citation.bib?raw'
-
 
 // export const GET = async ({ url }) => {
 //   // console.log(url);
@@ -15,11 +14,11 @@ export const GET = async ({ url }) => {
 //   console.log(pathname);
 //   const jsonFilePaths = import.meta.glob('/src/routes/api/publications/**/*.json');
 //   const bibFiles = import.meta.glob('/src/routes/api/publications/**/*.bib', { });
-  
+
 //   // const fetchBib = await fetch(`${pathname}/citation.bib`);
 //   // const fetchBib = await fetch(`test.txt`);
 //   console.log(assetAsString);
-  
+
 //   // remove template folder with pattern matching
 //   delete jsonFilePaths['/src/routes/api/publications/template/metadata.json'];
 //   delete bibFiles['/src/routes/api/publications/template/citation.bib'];

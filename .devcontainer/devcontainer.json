@@ -8,16 +8,16 @@
   "customizations": {
     "vscode": {
       "extensions": [
-		"svelte.svelte-vscode",
-		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode",
-		"GitHub.copilot",
-		"Postman.postman-for-vscode",
-		"znck.grammarly",
-		"streetsidesoftware.code-spell-checker",
-		"tomoki1207.pdf",
-		"Bito.Bito"
-	]
+        "svelte.svelte-vscode",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "GitHub.copilot",
+        "Postman.postman-for-vscode",
+        "znck.grammarly",
+        "streetsidesoftware.code-spell-checker",
+        "tomoki1207.pdf",
+        "Bito.Bito"
+      ]
     }
   }
 }
