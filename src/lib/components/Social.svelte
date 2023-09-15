@@ -74,5 +74,5 @@
       /><polyline points="22,6 12,13 2,6" /></svg
     >
   </Icon>
-  <Icon href="/cv.pdf"><span class="link link-hover text-lg no-underline">CV</span></Icon>
+  <Icon href="/cv.pdf"><span class="link link-hover text-lg text-white no-underline">CV</span></Icon>
 </div>

@@ -10,7 +10,7 @@
       <li tabindex="0">
         <a href="/about"> About </a>
         <a href="/publications"> Publications </a>
-        <a href="/projects"> Projects </a>
+        <!-- <a href="/projects"> Projects </a> -->
         <a href="/cv.pdf"> CV </a>
         <a href="/contact"> Contact </a>
       </li>
@@ -42,7 +42,7 @@
         <li tabindex="0">
           <a href="/about"> About </a>
           <a href="/publications"> Publications </a>
-          <a href="/projects"> Projects </a>
+          <!-- <a href="/projects"> Projects </a> -->
           <a href="/cv.pdf"> CV </a>
           <a href="/contact"> Contact </a>
         </li>
