@@ -1,0 +1,1 @@
+import{_ as a}from"./preload-helper-b21cceae.js";const r=async()=>{const t=await a(()=>import("./cv-06844f17.js"),["./cv-06844f17.js","./index-7911055f.js"],import.meta.url),e=t.metadata,o=t.default;return{metadata:e,content:o}},n=Object.freeze(Object.defineProperty({__proto__:null,load:r},Symbol.toStringTag,{value:"Module"}));export{n as _,r as l};
