@@ -9,7 +9,7 @@
     <ul class="menu menu-horizontal p-0">
       <li tabindex="0">
         <a href="/about"> About </a>
-        <a href="/publications"> Publications </a>
+        <!-- <a href="/publications"> Publications </a> -->
         <!-- <a href="/projects"> Projects </a> -->
         <a href="/cv.pdf"> CV </a>
         <a href="/contact"> Contact </a>
@@ -41,7 +41,7 @@
       <ul tabindex="0" class="dropdown-content menu p-4 mx-auto shadow bg-base-200  w-screen">
         <li tabindex="0">
           <a href="/about"> About </a>
-          <a href="/publications"> Publications </a>
+          <!-- <a href="/publications"> Publications </a> -->
           <!-- <a href="/projects"> Projects </a> -->
           <a href="/cv.pdf"> CV </a>
           <a href="/contact"> Contact </a>

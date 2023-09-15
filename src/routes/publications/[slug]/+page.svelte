@@ -1,12 +1,12 @@
-<script lang="ts">
+<!-- <script lang="ts">
   export let data: import('./$types').PageData;
-</script>
+</script> -->
 
 <!-- // Display json data beautifully -->
 
-<article class="container">
+<!-- <article class="container">
   <h1>{data.title}</h1>
   <h2>Citation</h2>
   <pre>{data.bib}</pre>
-  <!-- <pre>{JSON.stringify(data, null, 2)}</pre> -->
-</article>
+  <pre>{JSON.stringify(data, null, 2)}</pre>
+</article> -->

@@ -8,5 +8,4 @@
   <!-- <svelte:component this={data.short_bio} /> -->
   <!-- {@html data.short_bio} -->
   {@html data.long_bio}
-
 </article>
