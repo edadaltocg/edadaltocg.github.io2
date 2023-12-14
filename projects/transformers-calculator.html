@@ -2,20 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="../favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="content-security-policy" content=""><title>Eduardo Dadalto</title>
-	<link href="./_app/immutable/assets/_layout-30cfa826.css" rel="stylesheet">
-	<link rel="modulepreload" href="./_app/immutable/start-c74a7659.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-b21cceae.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/index-ce2ff7b7.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-2552fa42.js">
-	<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-18a428c6.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/Social-e6ed5dfc.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/public-bf71131c.js">
-	<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-b8ee4d7c.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/_layout-1daba58d.js">
-	<link rel="modulepreload" href="./_app/immutable/components/pages/contact/_page.svelte-29db3b9c.js">
+	<link href="../_app/immutable/assets/_layout-30cfa826.css" rel="stylesheet">
+	<link rel="modulepreload" href="../_app/immutable/start-c74a7659.js">
+	<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-b21cceae.js">
+	<link rel="modulepreload" href="../_app/immutable/chunks/index-ce2ff7b7.js">
+	<link rel="modulepreload" href="../_app/immutable/chunks/singletons-2552fa42.js">
+	<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-18a428c6.js">
+	<link rel="modulepreload" href="../_app/immutable/chunks/Social-e6ed5dfc.js">
+	<link rel="modulepreload" href="../_app/immutable/chunks/public-bf71131c.js">
+	<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-b8ee4d7c.js">
+	<link rel="modulepreload" href="../_app/immutable/chunks/_layout-1daba58d.js">
+	<link rel="modulepreload" href="../_app/immutable/components/pages/projects/transformers-calculator/_page.svelte-bcafff54.js">
   </head>
   <body>
     <div>
@@ -35,15 +35,101 @@
           <a href="/cv.pdf">CV </a>
           <a href="/contact">Contact </a>
           </li></ul></div></div></div>
-  <main class="prose-sm md:prose flex grow min-w-full md:container md:min-w-0 md:max-w-4xl justify-evenly h-full mx-auto px-2 md:px-0"><article><h1>Contact</h1>
-  <p>You can contact me via email at
-    <a href="mailto:edadaltocg@gmail.com">edadaltocg@gmail.com</a>. Happy to discuss new
-    projects and collaborations.
-  </p>
-  <h2>Profiles</h2>
-  <ul><li><a href="https://github.com/edadaltocg">Github</a></li>
-    <li><a href="https://linkedin.com/in/edadaltocg">LinkedIn</a></li>
-    <li><a href="https://scholar.google.com/citations?user=ImL09qAAAAAJ">Google Scholar</a></li></ul></article></main>
+  <main class="prose-sm md:prose flex grow min-w-full md:container md:min-w-0 md:max-w-4xl justify-evenly h-full mx-auto px-2 md:px-0"><div class="container"><div class="flex justify-around"><h1>Transformers Calculator</h1></div>
+
+  <form>
+    <div><label for="sequence-length">Sequence Length
+    <div class="badge">s</div>
+    :<input type="number" placeholder="Type here" class="input" value="1024"></label></div>
+<input type="range" id="sequence-length" min="1" max="18" value="10">
+
+    
+    <div><label for="batch-size">Batch Size
+    <div class="badge">b</div>
+    :<input type="number" placeholder="Type here" class="input" value="1"></label></div>
+<input type="range" id="batch-size" min="1" max="512" value="1">
+
+    
+    <div><label for="hidden-dim">Hidden Dimension
+    <div class="badge">h</div>
+    :<input type="number" placeholder="Type here" class="input" value="768"></label></div>
+<input type="range" id="hidden-dim" min="1" max="24576" value="768">
+
+    
+    <div><label for="num-heads">Number of Heads
+    <div class="badge">a</div>
+    :<input type="number" placeholder="Type here" class="input" value="12"></label></div>
+<input type="range" id="num-heads" min="1" max="64" value="12">
+
+    
+    <div><label for="num-layers">Number of Layers
+    <div class="badge">l</div>
+    :<input type="number" placeholder="Type here" class="input" value="12"></label></div>
+<input type="range" id="num-layers" min="1" max="64" value="12">
+
+    
+    <div><label for="vocab-size">Vocabulary Size
+    <div class="badge">v</div>
+    :<input type="number" placeholder="Type here" class="input" value="50257"></label></div>
+<input type="range" id="vocab-size" min="1" max="16384" value="50257">
+
+    
+    <div><label for="weights-precision">Weights Precision
+    <div class="badge">w</div>
+    : 4
+    </label></div>
+<select id="gradientPrecision" class="select"><option value="Int8">Int8</option><option value="Float16">Float16</option><option value="Float32">Float32</option><option value="Float64">Float64</option><option value="Int4">Int4</option></select>
+
+    
+    <div><label for="gradient-precision">Gradient Precision
+    <div class="badge">g</div>
+    : 4
+    bytes/parameter</label></div>
+<select id="gradientPrecision" class="select"><option value="Int8">Int8</option><option value="Float16">Float16</option><option value="Float32">Float32</option><option value="Float64">Float64</option><option value="Int4">Int4</option></select>
+
+    
+    <div><label for="optimizer">Optimizer
+    <div class="badge">o</div>
+    : 12
+    bytes/parameter</label></div>
+<select id="gradientPrecision" class="select"><option value="adam">adam</option><option value="8-bit-adam">8-bit-adam</option><option value="adafactor">adafactor</option><option value="adamw">adamw</option><option value="sgd">sgd</option></select>
+
+    
+    <div><label for="position-encoding">Position Encoding
+    
+    : rope
+    </label></div>
+<select id="gradientPrecision" class="select"><option value="rope">rope</option><option value="alibi">alibi</option></select>
+
+    
+    <div><label for="attention-type">Attention Type
+    
+    : vanilla
+    </label></div>
+<select id="gradientPrecision" class="select"><option value="vanilla">vanilla</option><option value="flash-attention">flash-attention</option></select>
+
+    
+    <h2>Results</h2>
+    <h3>Compute</h3>
+    <h4>Forward</h4>
+    <h4>Backward</h4>
+
+    <h3>Memory</h3>
+    <h4>Forward</h4>
+    <ul><li><div class="flex flex-row items-center"><p>Model Weights: 0 GB</p>
+          <pre>code</pre></div></li>
+      <li>Embeddings: 0 GB</li>
+      <li>Activations: 0 GB</li>
+      <li>LayerNorm: 0 GB</li></ul>
+    <h5>Total: 0 GB</h5>
+
+    <h4>Backward</h4>
+
+    Results Inference Activations memory: LayerNorm memory: Weights memory: Total memory: Training
+    <h2>References</h2>
+    <ul><li><a href="https://github.com/karpathy/nanoGPT/blob/master/scaling_laws.ipynb">nanoGPT</a></li>
+      <li><a href="https://blog.eleuther.ai/transformer-math/">EleutherAI</a></li></ul>
+    <h2>Disclaimer</h2></form></div></main>
   <footer class="footer bg-base-200 sm:flex sm:justify-between footer-center p-4 text-base-content"><p>© 2023 Eduardo Dadalto</p>
   <div class="md:flex space-x-4 space-y-4 md:space-y-0">
 <div class="flex space-x-1"><svg class="feather feather-sun" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg>
@@ -59,22 +145,22 @@
   <a class="btn btn-circle flex place-items-center justify-center" href="/cv.pdf"><span class="link link-hover text-lg text-accent no-underline">CV</span></a></div></div></footer></div>
 
 
-		<script type="module" data-sveltekit-hydrate="132sdrv">
-		import { start } from "./_app/immutable/start-c74a7659.js";
+		<script type="module" data-sveltekit-hydrate="ruo6tz">
+		import { start } from "../_app/immutable/start-c74a7659.js";
 
 		start({
 			env: {},
 			hydrate: {
 				status: 200,
 				error: null,
-				node_ids: [0, 7],
+				node_ids: [0, 10],
 				params: {},
-				routeId: "contact",
+				routeId: "projects/transformers-calculator",
 				data: (function(a){return [a,a]}(null)),
 				form: null
 			},
 			paths: {"base":"","assets":""},
-			target: document.querySelector('[data-sveltekit-hydrate="132sdrv"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="ruo6tz"]').parentNode,
 			trailing_slash: "never"
 		});
 	</script>
