@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 apt_packages="curl git iproute2 python3-pip tmux vim zsh fzf xclip neovim"
-apt_packages_optional="gnupg htop jq rsync shellcheck unzip"
+apt_packages_optional="gnupg htop jq rsync shellcheck unzip openssh-client"
 
 apt-get update && apt-get install -y ${apt_packages} ${apt_packages_optional}
 

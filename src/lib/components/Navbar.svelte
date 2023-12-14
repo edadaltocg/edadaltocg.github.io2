@@ -6,19 +6,17 @@
     <a href="/" class="btn btn-ghost normal-case text-xl">Home</a>
   </div>
   <div class="navbar-center hidden md:flex">
-    <ul class="menu menu-horizontal p-0">
-      <li tabindex="0">
-        <a href="/about"> About </a>
-        <!-- <a href="/publications"> Publications </a> -->
-        <!-- <a href="/projects"> Projects </a> -->
-        <a href="/cv.pdf"> CV </a>
-        <a href="/contact"> Contact </a>
-      </li>
+    <ul class="menu menu-horizontal px-1">
+      <li tabindex="0"><a href="/about"> About </a></li>
+      <li><a href="/cv.pdf"> CV </a></li>
+      <li><a href="/contact"> Contact </a></li>
+      <!-- <li><a href="/projects"> Projects </a></li> -->
+      <!-- <a href="/publications"> Publications </a> -->
     </ul>
   </div>
   <div class="navbar-end">
     <div class="dropdown dropdown-end">
-      <button tabindex="0" class="btn btn-outline md:hidden"
+      <button tabindex="0" class="btn btn-ghost md:hidden"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -38,13 +36,13 @@
           /></svg
         ></button
       >
-      <ul tabindex="0" class="dropdown-content menu p-4 mx-auto shadow bg-base-200  w-screen">
+      <ul tabindex="0" class="menu dropdown-content p-4 mx-auto shadow bg-base-100 w-screen z-[1]">
         <li tabindex="0">
           <a href="/about"> About </a>
           <!-- <a href="/publications"> Publications </a> -->
-          <!-- <a href="/projects"> Projects </a> -->
           <a href="/cv.pdf"> CV </a>
           <a href="/contact"> Contact </a>
+          <!-- <a href="/projects"> Projects </a> -->
         </li>
       </ul>
     </div>
