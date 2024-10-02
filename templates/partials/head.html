@@ -1,0 +1,93 @@
+{#- meta tags #}
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="base" content="{{ config.base_url | safe }}" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="description"
+  content="{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}">
+
+{#- Security: CSP, referrer #}
+{%- if config.extra.security_header_referrer %}
+<meta name="referrer" content="{{ config.extra.security_header_referrer | safe }}" />
+{%- endif %}
+{%- if config.extra.security_header_csp %}
+<meta http-equiv="Content-Security-Policy" content="{{ config.extra.security_header_csp | safe }}" />
+{%- endif %}
+
+{#- Favicons #}
+{%- if config.extra.favicon_theme_color %}
+<meta name="theme-color" content="{{ config.extra.favicon_theme_color }}" />
+{%- endif %}
+
+{%- if config.extra.favicon_ms_color %}
+<meta name="msapplication-TileColor" content="{{ config.extra.favicon_ms_color }}" />
+{%- endif %}
+
+{%- if config.extra.webmanifest %}
+<link rel="manifest" href="{{ get_url(path=config.extra.webmanifest, trailing_slash=false) | safe }}" />
+{%- endif %}
+
+{%- if config.extra.favicon_mask and config.extra.favicon_mask_color %}
+<link rel="mask-icon" href="{{ get_url(path=config.extra.favicon_mask, trailing_slash=false) | safe }}"
+  color="{{ config.extra.favicon_mask_color }}" />
+{%- endif %}
+
+{%- if config.extra.favicon_svg %}
+<link rel="icon" type="image/svg+xml"
+  href="{{ get_url(path=config.extra.favicon_svg, trailing_slash=false) | safe }}" />
+{%- endif %}
+
+{%- if config.extra.favicon180 %}
+<link rel="apple-touch-icon" sizes="180x180"
+  href="{{ get_url(path=config.extra.favicon180, trailing_slash=false) | safe }}" />
+{%- endif %}
+
+{%- if config.extra.favicon32 %}
+<link rel="icon" type="image/png" sizes="32x32"
+  href="{{ get_url(path=config.extra.favicon32, trailing_slash=false) | safe }}" />
+{%- endif %}
+
+{%- if config.extra.favicon16 %}
+<link rel="icon" type="image/png" sizes="16x16"
+  href="{{ get_url(path=config.extra.favicon16, trailing_slash=false) | safe }}" />
+{%- endif %}
+
+{#- Rss / Atom Feed #}
+
+{%- if config.generate_feeds %}
+{%- for feed in config.feed_filenames %}
+
+{%- if feed is containing('atom') %}
+<link rel="alternate" type="application/atom+xml" title="{{ config.title }} Atom Feed"
+  href="{{ get_url(path=feed, trailing_slash=false, lang=lang) | safe }}" />
+{%- endif %}
+
+{%- if feed is containing('rss') %}
+<link rel="alternate" type="application/rss+xml" title="{{ config.title }} RSS Feed"
+  href="{{ get_url(path=feed, trailing_slash=false, lang=lang) | safe }}" />
+{%- endif %}
+
+{%- endfor %}
+{%- endif %}
+
+{% if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
+<link rel="stylesheet" type="text/css" href="/syntax-theme-dark.css" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" type="text/css" href="/syntax-theme-light.css" media="(prefers-color-scheme: light)" />
+{% endif %}
+
+<link rel="stylesheet" type="text/css" href="/style.css" />
+
+{%- if config.extra.js_prestyle | default(value=true) %}
+<script defer
+  src="{{               get_url(path='/prestyle.js'                , trailing_slash=false, cachebust=true) | safe }}"
+  {%- if integrity %} integrity="sha384-{{ get_hash(path='/prestyle.js', sha_type=384, base64=true) | safe }}" {%- endif
+  %}></script>
+{%- endif %}
+
+{%- if config.extra.fontawesome %}
+<link rel="preload" as="style" class="preStyle" href="{{ config.extra.fontawesome | safe }}" crossorigin="anonymous" />
+{%- endif %}

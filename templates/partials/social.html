@@ -1,0 +1,107 @@
+{#- Social Icons #}
+<nav class="tpad">
+  <div>
+    {%- if config.generate_feeds and config.extra.feed -%}
+    {%- for feed in config.feed_filenames -%}
+
+    {%- if feed is containing('atom') -%}
+    <a type="application/atom+xml" href="{{ get_url(path=feed, trailing_slash=false, lang=lang) | safe }}"
+      target="_blank" title="{{ config.title }} Atom Feed"><i class="fas fa-rss"
+        title="{{ config.title }} Atom Feed"></i></a>{% endif -%}
+    {%- if feed is containing('rss') -%}
+    <a type="application/rss+xml" href="{{ get_url(path=feed, trailing_slash=false, lang=lang) | safe }}"
+      target="_blank" title="{{ config.title }} RSS Feed"><i class="fas fa-rss"
+        title="{{ config.title }} RSS Feed"></i></a>{% endif -%}
+
+    {%- endfor -%}
+    {%- endif -%}
+
+    {%- if config.extra.mail -%}
+    {%- if config.extra.mail_encode | default(value=true) -%}
+
+    {%- set base64_email = config.extra.mail -%}
+    <a class="js m-protected" href="#{{ base64_email | base64_encode }}" target="_blank" title="Mail"><i
+        class="fas fa-envelope" title="Mail"></i></a>
+    {%- else -%}
+    <a href="mailto:{{ config.extra.mail }}" target="_blank" title="Mail"><i class="fas fa-envelope"
+        title="Mail"></i></a>
+    {%- endif -%}
+    {% endif -%}
+    {%- if config.extra.mastodon -%}
+    <a href="{{ config.extra.mastodon | safe }}" target="_blank" title="Mastodon" rel="me"><i class="fab fa-mastodon"
+        title="Mastodon"></i></a>{% endif -%}
+    {%- if config.extra.element -%}
+    <a href="https://{{ config.extra.element }}/" target="_blank" title="Element"><i class="fas fa-comment-dots"
+        title="Element"></i></a>{% endif -%}
+    {%- if config.extra.matrix -%}
+    <a href="https://{{ config.extra.matrix }}/" target="_blank" title="Matrix"><i class="fas fa-network-wired"
+        title="Matrix"></i></a>{% endif -%}
+    {%- if config.extra.discord -%}
+    <a href="https://discord.com/{{ config.extra.discord }}/" target="_blank" title="Discord"><i class="fab fa-discord"
+        title="Discord"></i></a>{% endif -%}
+    {%- if config.extra.twitter -%}
+    <a href="https://twitter.com/{{ config.extra.twitter }}/" target="_blank" title="Twitter"><i class="fab fa-twitter"
+        title="Twitter"></i></a>{% endif -%}
+    {%- if config.extra.facebook -%}
+    <a href="https://www.facebook.com/{{ config.extra.facebook }}/" target="_blank" title="Facebook"><i
+        class="fab fa-facebook" title="Facebook"></i></a>{% endif -%}
+    {%- if config.extra.linkedin -%}
+    <a href="https://www.linkedin.com/in/{{ config.extra.linkedin }}/" target="_blank" title="LinkedIn"><i
+        class="fab fa-linkedin" title="LinkedIn"></i></a>{% endif -%}
+    {%- if config.extra.researchgate -%}
+    <a href="https://www.researchgate.net/profile/{{ config.extra.researchgate }}/" target="_blank"
+      title="ResearchGate"><i class="fas fa-flask" title="ResearchGate"></i></a>{% endif -%}
+    {%- if config.extra.codeberg -%}
+    <a href="https://codeberg.org/{{ config.extra.codeberg }}/" target="_blank" title="Codeberg"><i class="fas fa-code"
+        title="Codeberg"></i></a>{% endif -%}
+    {%- if config.extra.gitlab -%}
+    <a href="https://gitlab.com/{{ config.extra.gitlab }}/" target="_blank" title="Gitlab"><i class="fab fa-gitlab"
+        title="Gitlab"></i></a>{% endif -%}
+    {%- if config.extra.github -%}
+    <a href="https://github.com/{{ config.extra.github }}/" target="_blank" title="Github"><i class="fab fa-github"
+        title="Github"></i></a>{% endif -%}
+    {%- if config.extra.bitbucket -%}
+    <a href="https://bitbucket.org/{{ config.extra.bitbucket }}/" target="_blank" title="Bitbucket"><i
+        class="fab fa-bitbucket" title="Bitbucket"></i></a>{% endif -%}
+    {%- if config.extra.python -%}
+    <a href="https://pypi.org/user/{{ config.extra.python }}/" target="_blank" title="Python"><i class="fab fa-python"
+        title="Python"></i></a>{% endif -%}
+    {%- if config.extra.docker -%}
+    <a href="https://hub.docker.com/u/{{ config.extra.docker }}/" target="_blank" title="Docker"><i
+        class="fab fa-docker" title="Docker"></i></a>{% endif -%}
+    {%- if config.extra.stack -%}
+    <a href="https://stackoverflow.com/users/{{ config.extra.stack }}/" target="_blank" title="Stack"><i
+        class="fab fa-stack-overflow" title="Stack"></i></a>{% endif -%}
+    {%- if config.extra.instagram -%}
+    <a href="https://www.instagram.com/{{ config.extra.instagram }}/" target="_blank" title="Instagram"><i
+        class="fab fa-instagram" title="Instagram"></i></a>{% endif -%}
+    {%- if config.extra.pixelfed -%}
+    <a href="{{ config.extra.pixelfed | safe }}" target="_blank" title="Pixelfed"><i class="fab fa-pixelfed"
+        title="Pixelfed"></i></a>{% endif -%}
+    {%- if config.extra.pinterest -%}
+    <a href="https://www.pinterest.com/{{ config.extra.pinterest }}/" target="_blank" title="Pinterest"><i
+        class="fab fa-pinterest" title="Pinterest"></i></a>{% endif -%}
+    {%- if config.extra.youtube -%}
+    <a href="https://www.youtube.com/{{ config.extra.youtube }}" target="_blank" title="YouTube"><i
+        class="fab fa-youtube" title="YouTube"></i></a>{% endif -%}
+    {%- if config.extra.twitch -%}
+    <a href="https://www.twitch.tv/{{ config.extra.twitch }}/" target="_blank" title="Twitch"><i class="fab fa-twitch"
+        title="Twitch"></i></a>{% endif -%}
+    {%- if config.extra.peertube -%}
+    <a href="{{ config.extra.peertube | safe }}/" target="_blank" title="PeerTube"><i class="fab fa-peertube"
+        title="PeerTube"></i></a>{% endif -%}
+    {%- if config.extra.kofi -%}
+    <a href="https://www.ko-fi.com/{{ config.extra.kofi }}/" target="_blank" title="Support me on Ko-fi"><i
+        class="fas fa-coffee" title="Support me on Ko-fi"></i></a>{% endif -%}
+    {%- if config.extra.buymeacoffee -%}
+    <a href="https://www.buymeacoffee.com/{{ config.extra.buymeacoffee }}/" target="_blank" title="Buy Me A Coffee"><i
+        class="fas fa-mug-hot" title="Buy Me A Coffee"></i></a>{% endif -%}
+    {%- if config.extra.github_sponsor -%}
+    <a href="https://github.com/sponsors/{{ config.extra.github_sponsor }}/" target="_blank" title="GitHub Sponsor"><i
+        class="fas fa-heart" title="GitHub Sponsor"></i></a>{% endif -%}
+    {%- if config.extra.telegram -%}
+    <a href="https://t.me/{{ config.extra.telegram }}/" target="_blank" title="Telegram"><i class="fab fa-telegram"
+        title="Telegram"></i></a>{% endif -%}
+  </div>
+</nav>
+{#- End of social partial -#}
