@@ -1,0 +1,79 @@
+div.logo {
+  /* Background and other properties maintained unchanged */
+  background: repeating-linear-gradient(
+    90deg,
+    var(--accent),
+    var(--accent) 2px,
+    transparent 0,
+    transparent 10px
+  ); /* Apply the background here */
+
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 8px,
+    rgba(255, 255, 255, 0.2) 8px,
+    rgba(255, 255, 255, 0.2) 16px
+  );
+  z-index: -1;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+
+  width: 100vw;
+  position: relative;
+  box-sizing: border-box;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.logo-text {
+  display: inline; /* Ensures only the text is covered by the background */
+  background: var(--accent);
+  font-weight: normal;
+  color: black;
+  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-family:
+    "Fira Code",
+    Menlo,
+    DejaVu Sans Mono,
+    Monaco,
+    Consolas,
+    Ubuntu Mono,
+    monospace;
+}
+
+.styless-list {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding from list */
+  margin: 0; /* Remove margin from list */
+}
+
+.styless-list li {
+  /* Styles for list items, e.g., add padding or margin if necessary */
+  padding: 5px 0;
+}
+
+.search-button {
+  margin-left: auto; /* Push the button to the right side */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+.burger-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

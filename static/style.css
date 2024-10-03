@@ -17,6 +17,7 @@ pre table td:nth-of-type(1) {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
+
 @media (prefers-color-scheme: dark) {
   pre mark {
     display: block;
@@ -35,6 +36,17 @@ pre table {
   width: 100%;
   border-collapse: collapse;
 }
-pre code {
-  line-height: 1.5;
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color-scheme: light dark;
+  background-color: Canvas;
+  color: CanvasText;
 }
+
+/* :root { */
+/*   pico-font-family: "Helvetica", "Arial", sans-serif; */
+/*   pico-color-scheme: light dark; */
+/*   pico-background-color: Canvas; */
+/*   pico-color: CanvasText; */
+/* } */

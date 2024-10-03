@@ -79,7 +79,6 @@
 <link rel="stylesheet" type="text/css" href="/syntax-theme-light.css" media="(prefers-color-scheme: light)" />
 {% endif %}
 
-<link rel="stylesheet" type="text/css" href="/style.css" />
 
 {%- if config.extra.js_prestyle | default(value=true) %}
 <script defer
@@ -91,3 +90,16 @@
 {%- if config.extra.fontawesome %}
 <link rel="preload" as="style" class="preStyle" href="{{ config.extra.fontawesome | safe }}" crossorigin="anonymous" />
 {%- endif %}
+
+<!-- Katex -->
+{% if page.extra.math %}
+{% include 'partials/katex.html' %}
+{% endif %}
+
+<!-- Style -->
+<meta name="color-scheme" content="light dark">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="/style.css" /> -->
+<link rel="stylesheet" type="text/css" href="/simple.css" />
+<link rel="stylesheet" type="text/css" href="/disqus.css" />
+<link rel="stylesheet" type="text/css" href="/classes.css" />

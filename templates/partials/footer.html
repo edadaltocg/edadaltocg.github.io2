@@ -1,0 +1,21 @@
+<footer>
+  <div style="margin: 108px 0;">
+    <p>Menu</p>
+    <ul class="styless-list">
+      {% for menu_item in config.extra.footer_menu %}
+      <li>
+        <a href="{{ menu_item.url }}" {% if menu_item.external %} target="_blank" rel="noopener noreferrer" {% endif %}>
+          {{ menu_item.name }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    {% include "partials/social.html" %}
+  </div>
+  <!-- <div> -->
+  <!--   <p>Eduardo Dadalto &copy; 2024 -->
+  <!--   </p> -->
+  <!-- </div> -->
+</footer>

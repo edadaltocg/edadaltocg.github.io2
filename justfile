@@ -19,3 +19,11 @@ optimize_png:
   oxipng -o max --strip all -a -Z *.png
   leanify -i 7777 *.png
   leanify -i 7777 *.ico
+
+PANDOC_INPUT := "pandoc-input.md"
+OUTPUT_HTML := "out/list.html"
+BIBLIOGRAPHY := "publications.bib"
+
+bib2html:
+  mkdir -p out
+  pandoc --citeproc {{PANDOC_INPUT}} -o {{OUTPUT_HTML}} --bibliography={{BIBLIOGRAPHY}}

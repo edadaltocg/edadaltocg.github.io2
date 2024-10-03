@@ -1,0 +1,26 @@
+<header>
+  <!-- <div class="logo"> -->
+  <!--   <div class="logo-text"> -->
+  <!--     {{ config.title }} -->
+  <!--   </div> -->
+  <!-- </div> -->
+  <nav style="display: flex;    align-items: center;">
+    {% if config.extra.links %}
+    {% for link in config.extra.links %}
+    <a href="{{ link.href }}">{{ link.title }}</a>
+    {% endfor %}
+    {% endif %}
+
+    <button onclick="handleSearch()" class="search-button">
+      <i class="fas fa-search"></i>
+    </button>
+
+    <!-- FontAwesome Burger Button -->
+    <button class="burger-menu" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+  <p>
+
+  </p>
+</header>
