@@ -27,6 +27,9 @@
   {% include "partials/header.html" %}
   {% endblock header %}
 
+  {% block after_header %}
+  {% endblock %}
+
   {% block content %}
   {% set blog = get_section(path="blog/_index.md") %}
   {% set publications = get_section(path="publications/_index.md") %}
@@ -39,6 +42,7 @@
       {{ section.content | safe }}
     </div>
     {% endif %}
+<p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
     {% if blog.pages %}
     <h3>Recent posts</h3>
     <ul>

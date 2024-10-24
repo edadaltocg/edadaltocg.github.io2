@@ -1,4 +1,11 @@
-{% extends "page.html" %}
+{% extends "index.html" %}
+
+{% block header %}
+  {% include "partials/header.html" %}
+<nav>
+  <a href="{{ config.base_url }}">&LeftArrow; Home</a>
+</nav>
+{% endblock header %}
 
 {% block content %}
 <div id="refs" class="references csl-bib-body hanging-indent"
@@ -7,7 +14,7 @@ role="doc-bibliography">
 Benammar, Meryem, Eduardo Dadalto Câmara Gomes, and Pablo Piantanida.
 2021. <span>“CSI-Aided Robust Neural-Based Decoders.”</span> In <em>2021
 11th International Symposium on Topics in Coding (ISTC)</em>, 1–5. <a
-href="https://doi.org/10.1109/ISTC49272.2021.9594117">https://doi.org/10.1109/ISTC49272.2021.9594117</a>.
+      href="https://doi.org/10.1109/ISTC49272.2021.9594117">https://doi.org/10.1109/ISTC49272.2021.9594117</a>.
 </div>
 <div id="ref-colombo2022" class="csl-entry" role="doc-biblioentry">
 Colombo, Pierre, Eduardo Dadalto, Guillaume Staerman, Nathan Noiry, and

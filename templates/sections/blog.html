@@ -1,10 +1,9 @@
-{% extends "page.html" %}
-
-{% block title %}{{ config.title }} | {{ section.title }}{% endblock title %}
+{% extends "section.html" %}
 
 {% block content %}
 <main>
   <h1>{{ section.title }}</h1>
+  {{section.description}}
   {% if section.pages %}
   {% for year, posts in section.pages | group_by(attribute="year") %}
   <h2>{{ year }}</h2>

@@ -4,8 +4,8 @@
     <ul class="styless-list">
       {% for menu_item in config.extra.footer_menu %}
       <li>
-        <a href="{{ menu_item.url }}" {% if menu_item.external %} target="_blank" rel="noopener noreferrer" {% endif %}>
-          {{ menu_item.name }}
+        <a href="{{ menu_item.href }}" {% if menu_item.title %} target="_blank" rel="noopener noreferrer" {% endif %}>
+          {{ menu_item.title }}
         </a>
       </li>
       {% endfor %}
