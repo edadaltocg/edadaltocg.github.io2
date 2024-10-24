@@ -1,3 +1,73 @@
+<style>
+  /* Base styles */
+
+  #vertical-menu {
+    display: none;
+  }
+
+  #vertical-menu.open {}
+
+  #burger-menu {
+    display: none;
+  }
+
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    #horizontal-menu {
+      display: none;
+    }
+
+    #vertical-menu {
+      display: none;
+    }
+
+    #burger-menu {
+      display: block;
+    }
+  }
+
+  .burger-menu,
+  .search-button {
+    cursor: pointer;
+  }
+
+  /* Container for the search results */
+  .search-results {
+    padding: 0.5rem;
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Position it just below the input */
+    left: 0;
+    width: 96%;
+    max-height: 384px;
+    /* Set a maximum height and make it scrollable */
+    overflow-y: auto;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    background-color: var(--accent-bg);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Add a shadow for the overlay effect */
+    z-index: 1000;
+    /* Ensure it's above other content */
+  }
+
+  /* Individual search result items */
+  .search-results__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #search {
+    width: 100%;
+  }
+
+  .search-container {
+    margin-left: auto;
+  }
+</style>
+
 <header>
   <!-- <div class="logo"> -->
   <!--   <div class="logo-text"> -->
@@ -5,22 +75,60 @@
   <!--   </div> -->
   <!-- </div> -->
   <nav style="display: flex;    align-items: center;">
-    {% if config.extra.links %}
-    {% for link in config.extra.links %}
-    <a href="{{ link.href }}">{{ link.title }}</a>
-    {% endfor %}
-    {% endif %}
-
-    <button onclick="handleSearch()" class="search-button">
-      <i class="fas fa-search"></i>
-    </button>
-
-    <!-- FontAwesome Burger Button -->
-    <button class="burger-menu" aria-label="Toggle navigation">
+    <div id="horizontal-menu">
+      {% if config.extra.links %}
+      {% for link in config.extra.links %}
+      <a href="{{ link.href }}">{{ link.title }}</a>
+      {% endfor %}
+      {% endif %}
+    </div>
+    <div class="search-container">
+      <div style="position: relative; display: flex; align-items: center;">
+        <input type="text" id="search" placeholder="Search..." style="padding-right: 30px;">
+        <!-- Adjust padding compensation -->
+        <i class="fas fa-search" style="position: absolute; right: 10px; pointer-events: none;"
+          aria-label="Search Icon"></i>
+      </div>
+      <div class="search-results">
+        <div class="search-results__items"></div>
+      </div>
+    </div>
+    <button class="burger-menu" id="burger-menu" aria-label="Toggle navigation" onclick="toggleMenu()"
+      style="min-width: 43px">
       <i class="fas fa-bars"></i>
     </button>
+    <button class="close-menu" id="close-menu" aria-label="Close navigation" style="display:none;min-width: 43px;"
+      onclick="toggleMenu()">
+      <i class="fas fa-times"></i>
+    </button>
   </nav>
-  <p>
 
-  </p>
+  <div id="vertical-menu">
+    <ul class="styless-list">
+      {% for link in config.extra.links %}
+      <li>
+        <a href="{{ link.href }}">{{ link.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const burgerMenu = document.getElementById('burger-menu');
+      const closeMenu = document.getElementById('close-menu');
+      const nav = document.getElementById("vertical-menu"); // assuming .nav is the class for your navigation menu
+
+      // Toggles the display of buttons
+      if (nav.style.display === "none" || nav.style.display === "") {
+        nav.style.display = "block"; // Show navigation
+        burgerMenu.style.display = "none"; // Hide burger menu
+        closeMenu.style.display = "block"; // Show close button
+      } else {
+        nav.style.display = "none"; // Hide navigation
+        burgerMenu.style.display = "block"; // Show burger menu
+        closeMenu.style.display = "none"; // Hide close button
+      }
+    }
+  </script>
 </header>

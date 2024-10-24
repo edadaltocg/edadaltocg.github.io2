@@ -20,10 +20,12 @@ optimize_png:
   leanify -i 7777 *.png
   leanify -i 7777 *.ico
 
-PANDOC_INPUT := "pandoc-input.md"
+PANDOC_INPUT := "publications/pandoc-input.md"
 OUTPUT_HTML := "out/list.html"
-BIBLIOGRAPHY := "publications.bib"
+BIBLIOGRAPHY := "publications/publications.bib"
 
 bib2html:
   mkdir -p out
   pandoc --citeproc {{PANDOC_INPUT}} -o {{OUTPUT_HTML}} --bibliography={{BIBLIOGRAPHY}}
+
+# jupyter-nbconvert --to markdown  content/blog/2dgs/2dgs.ipynb

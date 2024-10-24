@@ -10,6 +10,7 @@ generate_feeds = true
 generate_sitemap = true
 generate_robots_txt = true
 
+ignored_content = ["content/**/{Cargo.lock,target}, *.rs, *.py, *.ipynb"]
 
 title = "ed's"
 description = "description."
@@ -46,14 +47,18 @@ include_content = true            # include rendered content of page/section in 
 # Put all your custom variables here
 author = "Eduardo Dadalto"
 links = [
-  { title = "Mail", href = "mailto:example@example.com" },
-  { title = "GitHub", href = "https://github.com" },
-  { title = "LinkedIn", href = "https://linkedin.com" },
+  { title = "publications", href = "/publications" },
+  { title = "bio", href = "/bio" },
+  { title = "blog", href = "/blog" },
+  { title = "contact", href = "/contact" },
+  { title = "projects", href = "/projects" },
 ]
 footer_menu = [
-  { url = "/about/", name = "about" },
-  { url = "/contact/", name = "contact" },
-  { url = "https://google.com", name = "Google", external = true },
+  { title = "publications", href = "/publications" },
+  { title = "bio", href = "/bio" },
+  { title = "blog", href = "/blog" },
+  { title = "contact", href = "/contact" },
+  { title = "projects", href = "/projects" },
 ]
 enable_katex = true
 logo_home_link = "/"
@@ -64,7 +69,9 @@ js_prestyle = true
 github = "edadaltocg"
 linkedin = "edadaltocg"
 twitter = "edadaltocg"
-feed = true             # this adds the RSS feed icon in the footer.
+docker = "edadaltocg"      #https://hub.docker.com/repositories/edadaltocg"
+huggingface = "edadaltocg"
+feed = true                # this adds the RSS feed icon in the footer.
 
 # Icons
 fontawesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
