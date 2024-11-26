@@ -72,7 +72,7 @@
 
 html {
   /* Set the font globally */
-  font-family: var(--sans-font);
+  /* font-family: var(--sans-font); */
 }
 
 /* Make the body a nice central block */

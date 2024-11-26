@@ -50,45 +50,48 @@ links = [
   { title = "home", href = "/" },
   { title = "publications", href = "/publications" },
   # { title = "bio", href = "/bio" },
-  { title = "cv", href = "/cv" },
   # { title = "blog", href = "/blog" },
-  { title = "contact", href = "/contact" },
   { title = "projects", href = "/projects" },
   { title = "teaching", href = "/teaching" },
   { title = "news", href = "/news" },
+  { title = "contact", href = "/contact" },
+  { title = "cv", href = "/cv" },
 ]
 footer_menu = [
-  { title = "home", href = "/home" },
+  # { title = "home", href = "/" },
   { title = "publications", href = "/publications" },
   # { title = "bio", href = "/bio" },
-  { title = "cv", href = "/cv" },
   # { title = "blog", href = "/blog" },
-  { title = "contact", href = "/contact" },
   { title = "projects", href = "/projects" },
   { title = "teaching", href = "/teaching" },
   { title = "news", href = "/news" },
+  { title = "contact", href = "/contact" },
+  { title = "cv", href = "/cv" },
 ]
 enable_katex = true
 logo_home_link = "/"
 seo = true # enable or disable seo-related meta tags: opengraph, facebook, twitter
-keywords = "Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" # used for the primary site index
+keywords = "" # used for the primary site index
 js_prestyle = true
 # Socials
 github = "edadaltocg"
 linkedin = "edadaltocg"
-twitter = "edadaltocg"
-docker = "edadaltocg"      #https://hub.docker.com/repositories/edadaltocg"
+bluesky = "edadaltocg"
+twitter = "dadalto_eduardo"
+docker = "edadaltocg"       #https://hub.docker.com/repositories/edadaltocg"
 huggingface = "edadaltocg"
-feed = true                # this adds the RSS feed icon in the footer.
+feed = true                 # this adds the RSS feed icon in the footer.
 
 # Icons
 fontawesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
-favicon_svg = "favicon.ico"         # favicon.svg
+favicon_svg = "favicon.ico" # favicon.svg
 favicon180 = "apple-touch-icon.png" # apple-touch-icon.png
-favicon32 = "favicon-32x32.png"     # favicon-32x32.png
-favicon16 = "favicon-16x16.png"     # favicon-16x16.png
-#fonts = [ {url = "https://fonts.googleapis.com/css?family=Roboto:400,700,italic|Roboto+Mono:400,italic"} ]
+favicon32 = "favicon-32x32.png" # favicon-32x32.png
+favicon16 = "favicon-16x16.png" # favicon-16x16.png
+fonts = [
+  { url = "https://fonts.googleapis.com/css?family=Roboto:400,700,italic|Roboto+Mono:400,italic" },
+]
 security_header_referrer = "strict-origin-when-cross-origin"
 # security_header_csp = "default-src 'none'; object-src 'none'; base-uri 'self'; manifest-src 'self'; connect-src 'self'; form-action 'self'; script-src 'self'; img-src 'self' data: cdn.cloudflare.com; frame-src 'self' www.youtube-nocookie.com player.vimeo.com; media-src 'self' data: cdn.cloudflare.com www.youtube-nocookie.com player.vimeo.com; font-src 'self' cdn.cloudflare.com cdn.jsdelivr.net fonts.gstatic.com; style-src 'self' cdn.cloudflare.com cdn.jsdelivr.net fonts.googleapis.com;"
 

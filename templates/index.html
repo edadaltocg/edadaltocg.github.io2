@@ -23,16 +23,11 @@
 </head>
 
 <body>
-  {% block header %}
-  {% include "partials/header.html" %}
-  {% endblock header %}
-
   {% block after_header %}
   {% endblock %}
 
   {% block content %}
   {% set blog = get_section(path="blog/_index.md") %}
-  {% set publications = get_section(path="publications/_index.md") %}
   {% if section.content or blog.pages %}
 
   <main>
@@ -46,13 +41,10 @@
   </main>
   {% endif %}
   {% endblock content %}
-
   {% block footer %}
       {%- include "partials/footer.html" %}
   {% endblock %}
-
-
-</main>
+  </main>
 
 </html>
 

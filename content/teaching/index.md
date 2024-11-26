@@ -1,4 +1,5 @@
 +++
+title="Teaching"
 +++
 
 ### CentraleSupélec, Université Paris-Saclay

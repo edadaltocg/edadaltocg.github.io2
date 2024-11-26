@@ -4,14 +4,14 @@
     {%- if config.generate_feeds and config.extra.feed -%}
     {%- for feed in config.feed_filenames -%}
 
-    {%- if feed is containing('atom') -%}
-    <a type="application/atom+xml" href="{{ get_url(path=feed, trailing_slash=false, lang=lang) | safe }}"
-      target="_blank" title="{{ config.title }} Atom Feed"><i class="fas fa-rss"
-        title="{{ config.title }} Atom Feed"></i></a>{% endif -%}
-    {%- if feed is containing('rss') -%}
-    <a type="application/rss+xml" href="{{ get_url(path=feed, trailing_slash=false, lang=lang) | safe }}"
-      target="_blank" title="{{ config.title }} RSS Feed"><i class="fas fa-rss"
-        title="{{ config.title }} RSS Feed"></i></a>{% endif -%}
+    <!-- {%- if feed is containing('atom') -%} -->
+    <!-- <a type="application/atom+xml" href="{{ get_url(path=feed, trailing_slash=false, lang=lang) | safe }}" -->
+    <!--   target="_blank" title="{{ config.title }} Atom Feed"><i class="fas fa-rss" -->
+    <!--     title="{{ config.title }} Atom Feed"></i></a>{% endif -%} -->
+    <!-- {%- if feed is containing('rss') -%} -->
+    <!-- <a type="application/rss+xml" href="{{ get_url(path=feed, trailing_slash=false, lang=lang) | safe }}" -->
+    <!--   target="_blank" title="{{ config.title }} RSS Feed"><i class="fas fa-rss" -->
+    <!--     title="{{ config.title }} RSS Feed"></i></a>{% endif -%} -->
 
     {%- endfor -%}
     {%- endif -%}
@@ -39,6 +39,10 @@
     {%- if config.extra.discord -%}
     <a href="https://discord.com/{{ config.extra.discord }}/" target="_blank" title="Discord"><i class="fab fa-discord"
         title="Discord"></i></a>{% endif -%}
+
+    {%- if config.extra.bluesky-%}
+    <a href="https://bsky.app/profile/{{ config.extra.bluesky }}.bsky.social" target="_blank" title="Bluesky"><i
+        class="fab fa-bluesky title=" Bluesky"></i></a>{% endif -%}
     {%- if config.extra.twitter -%}
     <a href="https://twitter.com/{{ config.extra.twitter }}/" target="_blank" title="Twitter"><i
         class="fab fa-x-twitter" title="Twitter"></i></a>{% endif -%}
@@ -106,6 +110,16 @@
     {%- if config.extra.telegram -%}
     <a href="https://t.me/{{ config.extra.telegram }}/" target="_blank" title="Telegram"><i class="fab fa-telegram"
         title="Telegram"></i></a>{% endif -%}
+    <a href="https://scholar.google.com/citations?user=ImL09qAAAAAJ" target="_blank"
+      style="justify-content: center; align-items: center; text-decoration: none;">
+      <i><svg width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="#4285f4" d="M256 411.12L0 202.667 256 0z" />
+          <path fill="#356ac3" d="M256 411.12l256-208.453L256 0z" />
+          <circle fill="#a0c3ff" cx="256" cy="362.667" r="149.333" />
+          <path fill="#76a7fa"
+            d="M121.037 298.667c23.968-50.453 75.392-85.334 134.963-85.334s110.995 34.881 134.963 85.334H121.037z" />
+        </svg></i>
+    </a>
   </div>
 </nav>
 {#- End of social partial -#}

@@ -1,14 +1,12 @@
 +++
+title="News"
 +++
-
-## News
 
 ### 2024
 
-- **11. November**: Closed the company.
-- **08. August**: Went to SF.
-- **07. July**: Raised a pre-seed round.
-- **06. June**: Co-founded Future Frame.
+- **11. November**: Closed Future Frame.
+- **08. August**: Went to San Francisco and launched our API platform for data scientists.
+- **07. July**: Raised a pre-seed round from EF and Transpose Platforms VC.
 - **04. April**: Was accepted at the Entrepreneur First Paris spring cohort as a founder in residence.
 - **03. March**: Defended my PhD Thesis.
 - **01. January**: Our paper "A Data-Driven Measure of Relative Uncertainty for Misclassification Detection" was accepted to appear at the ICLR2024 conference in Vienna, Austria.
