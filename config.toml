@@ -47,11 +47,11 @@ include_content = true            # include rendered content of page/section in 
 # Put all your custom variables here
 author = "Eduardo Dadalto"
 links = [
-  { title = "home", href = "/home" },
+  { title = "home", href = "/" },
   { title = "publications", href = "/publications" },
-  { title = "bio", href = "/bio" },
+  # { title = "bio", href = "/bio" },
   { title = "cv", href = "/cv" },
-  { title = "blog", href = "/blog" },
+  # { title = "blog", href = "/blog" },
   { title = "contact", href = "/contact" },
   { title = "projects", href = "/projects" },
   { title = "teaching", href = "/teaching" },
@@ -60,9 +60,9 @@ links = [
 footer_menu = [
   { title = "home", href = "/home" },
   { title = "publications", href = "/publications" },
-  { title = "bio", href = "/bio" },
+  # { title = "bio", href = "/bio" },
   { title = "cv", href = "/cv" },
-  { title = "blog", href = "/blog" },
+  # { title = "blog", href = "/blog" },
   { title = "contact", href = "/contact" },
   { title = "projects", href = "/projects" },
   { title = "teaching", href = "/teaching" },
