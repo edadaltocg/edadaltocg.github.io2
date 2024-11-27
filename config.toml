@@ -76,11 +76,11 @@ js_prestyle = true
 # Socials
 github = "edadaltocg"
 linkedin = "edadaltocg"
-bluesky = "edadaltocg"
-twitter = "dadalto_eduardo"
-docker = "edadaltocg"       #https://hub.docker.com/repositories/edadaltocg"
+# bluesky = "edadaltocg"
+# twitter = "dadalto_eduardo"
+docker = "edadaltocg"      #https://hub.docker.com/repositories/edadaltocg"
 huggingface = "edadaltocg"
-feed = true                 # this adds the RSS feed icon in the footer.
+feed = true                # this adds the RSS feed icon in the footer.
 
 # Icons
 fontawesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"

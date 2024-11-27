@@ -11,7 +11,7 @@
   {%- if config.extra.title_separator %}
   {%- set title_separator = " " ~ config.extra.title_separator ~ " " -%}
   {%- else %}
-  {%- set title_separator = " | " -%}
+  {%- set title_separator = " " -%}
   {%- endif %}
   {%- endblock seo %}
 
@@ -24,6 +24,31 @@
 
 <body>
   {% block after_header %}
+
+<div style="display: flex; margin-top: 4rem;">
+  <div>
+    <img  id="headshot" src="/eduardo_headshot_1.jpg" alt="Profile picture">
+  </div>
+  <div>
+    <h3 id="name">Eduardo Dadalto</h3>
+    <p id="subtitle">Building safe and robust human-machine interactions.</p>
+    <nav id="mainnav">
+        <!-- <a href="https://bsky.app/profile/edadaltocg.bsky.social" target="_blank" title="Bluesky"><i -->
+        <!-- class="fab fa-bluesky title=" Bluesky"></i></a> -->
+        <!-- <a href="https://twitter.com/dadalto_eduardo/" target="_blank" title="Twitter"><i -->
+        <!-- class="fab fa-x-twitter" title="Twitter"></i></a> -->
+        <a href="https://linkedin.com/in/edadaltocg/" target="_blank" title="LinkedIn"><i
+        class="fab fa-linkedin" title="LinkedIn"></i></a>
+        <a href="https://github.com/edadaltocg/" target="_blank" title="Github"><i class="fab fa-github"
+        title="Github"></i></a>
+        <a href="https://scholar.google.com/citations?user=ImL09qAAAAAJ" target="_blank" style="justify-content: center; align-items: center; text-decoration: none;">
+         <i><svg width="1em" height="1em"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#4285f4" d="M256 411.12L0 202.667 256 0z"/><path fill="#356ac3" d="M256 411.12l256-208.453L256 0z"/><circle fill="#a0c3ff" cx="256" cy="362.667" r="149.333"/><path fill="#76a7fa" d="M121.037 298.667c23.968-50.453 75.392-85.334 134.963-85.334s110.995 34.881 134.963 85.334H121.037z"/></svg></i>
+        </a>
+    </nav>
+  </div>
+
+</div>
+    </div>
   {% endblock %}
 
   {% block content %}
