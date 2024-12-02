@@ -4,7 +4,6 @@ title="News"
 
 ### 2024
 
-- **11. November**: Closed Future Frame.
 - **08. August**: Went to San Francisco and launched our API platform for data scientists.
 - **07. July**: Raised a pre-seed round from EF and Transpose Platforms VC together with my co-founder [Jeremy](https://fr.linkedin.com/in/jeremytoledano).
 - **04. April**: Was accepted at the Entrepreneur First Paris spring cohort as a founder-in-residence. A special thanks to [Clémence](https://fr.linkedin.com/in/cl%C3%A9mence-bellanger-743518160) and [Joachim](https://fr.linkedin.com/in/joachimclodic) for their support.
