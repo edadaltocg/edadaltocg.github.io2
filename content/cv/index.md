@@ -40,7 +40,7 @@ You can listen about my thesis here:
     <source src="/thesis_podcast_notebooklm.opus" type="audio/ogg">
     Your browser does not support the audio element.
   </audio>
-  <span style="display: block;">(auto-generated with NotebookLM)</span>
+  <span style="display: block;">(auto-generated with <a target="_blank" href="https://notebooklm.google/">NotebookLM</a>)</span>
 </div>
 
 #### [Institut de Mathématiques de Toulouse, Université Toulouse III](https://www.math.univ-toulouse.fr/fr/)
