@@ -5,11 +5,11 @@ alias p := preview
 default:
   just --list
 
+install:
+  brew install zola
+
 build:
   zola build
-
-install:
-  ...
 
 preview:
   zola serve --open
@@ -33,4 +33,8 @@ bib2html:
   mkdir -p out
   pandoc --citeproc {{PANDOC_INPUT}} -o {{OUTPUT_HTML}} --bibliography={{BIBLIOGRAPHY}}
 
-# jupyter-nbconvert --to markdown  content/blog/2dgs/2dgs.ipynb
+notebook2markdown path:
+  jupyter-nbconvert --to markdown {{path}}
+
+deploy:
+

@@ -1,19 +1,14 @@
 # My personal website
 
-## Blog: From Zero
+## Tech:
 
-### Logo: ASCII 157
+- [Zola](https://www.getzola.org/)
 
-An empty set.
+## TODO:
 
-alt + 157 (slashed zero)
-
-## Publications
-
-## Social links
-
-## Dark mode/light mode button
-
-## Internationalization
-
-## Spell checker
+- [x] Publications
+- [x] Social links
+- [ ] Dark mode/light mode button
+- [ ] Internationalization
+- [ ] Spell checker
+- [ ] Blog: From Zero
