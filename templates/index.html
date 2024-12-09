@@ -4,7 +4,7 @@
 <head>
   {%- include "partials/head.html" %}
 
-  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <title>{% block title %}{{ config.title }} {{ section.title }}{% endblock title %}</title>
 
   {#- SEO: title, description, etc #}
   {%- block seo %}
@@ -22,6 +22,7 @@
   {%- endblock extrahead -%}
 </head>
 
+
 <body>
   {% block after_header %}
 
@@ -31,7 +32,7 @@
   </div>
   <div>
     <h3 id="name">Eduardo Dadalto</h3>
-    <p id="subtitle">Building safe and robust human-machine interactions.</p>
+    <p id="subtitle">Building trustworthy human-centric AI.</p>
     <nav id="mainnav">
         <!-- <a href="https://bsky.app/profile/edadaltocg.bsky.social" target="_blank" title="Bluesky"><i -->
         <!-- class="fab fa-bluesky title=" Bluesky"></i></a> -->
