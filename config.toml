@@ -12,8 +12,8 @@ generate_robots_txt = true
 
 ignored_content = ["content/**/{Cargo.lock,target}, *.rs, *.py, *.ipynb"]
 
-title = "ed's"
-description = "description."
+title = "Ed's"
+description = "Hi there! Welcome to my personal website. I'm an AI researcher with experience in both academia and startups. I co-founded Future Frame in San Francisco and Paris, where we used advanced transformer models to transform data science by removing biases from traditional methods. Our API platform allowed data scientists to easily work with our innovations. I completed my PhD in Machine Learning at CentraleSupélec, focusing on making AI systems more secure and trustworthy, particularly in fields like computer vision and medical imaging. My background includes a research internship in Montreal and degrees from ISAE-SUPAERO and ITA in Brazil. I'm passionate about creating AI that's not only powerful but also truly human-centered and reliable. Thanks for stopping by to learn more about my work!."
 
 feed_filenames = ["atom.xml"]
 
@@ -84,7 +84,7 @@ footer_menu = [
 enable_katex = true
 logo_home_link = "/"
 seo = true # enable or disable seo-related meta tags: opengraph, facebook, twitter
-keywords = "" # used for the primary site index
+keywords = "eduardo dadalto,research,ai,human-centric ai,trustworthy ai,deep learning,NLP,computer vision" # used for the primary site index
 js_prestyle = true
 # Socials
 github = "edadaltocg"

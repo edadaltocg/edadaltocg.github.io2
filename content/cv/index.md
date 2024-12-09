@@ -10,14 +10,15 @@ _Dedicated to making AI a technology that benefits everyone._
 
 ### Contact Information
 
-- **Name:** Eduardo Dadalto Câmara Gomes
+- **Full Name:** Eduardo Dadalto Câmara Gomes
 - **Email:** edadaltocg[at]gmail.com
 - **Location:** Paris, Île-de-France, France
 - **Website:** [edadaltocg.github.io](https://www.edadaltocg.github.io)
 - **GitHub:** [github.com/edadaltocg](https://www.github.com/edadaltocg)
 - **LinkedIn:** [linkedin.com/in/edadaltocg](https://www.linkedin.com/in/edadaltocg/)
+- **PDF Version:** [cv.pdf](/cv.pdf)
 
-**Research Interests:** deep learning, computer vision, NLP, human-machine interaction \& robustness.
+**Research Interests:** deep learning, computer vision, NLP, human-centric AI \& robustness.
 
 ---
 
@@ -40,7 +41,7 @@ You can listen about my thesis here:
     <source src="/thesis_podcast_notebooklm.opus" type="audio/ogg">
     Your browser does not support the audio element.
   </audio>
-  <span style="display: block;">(auto-generated with NotebookLM)</span>
+  <span style="display: block;">(auto-generated with <a target="_blank" href="https://notebooklm.google/">NotebookLM</a>)</span>
 </div>
 
 #### [Institut de Mathématiques de Toulouse, Université Toulouse III](https://www.math.univ-toulouse.fr/fr/)
@@ -213,17 +214,3 @@ Open source package to accelerate research on out-of-distribution (OOD) detectio
 **Languages:** English (fluent), French (fluent), Portuguese (native).
 
 **Programming:** Python (PyTorch, Numpy, Tensorflow/Keras, Scikit-Learn, Transformers, etc.), distributed computing (Slurm), Go, C, CUDA (basics), JavaScript, HTML, SQL, LaTeX, git, Linux, Docker, cloud (Terraform IaC, AWS, GCP), etc.
-
----
-
-### Miscellaneous
-
-**Certificates:** Cambridge C2 Proficiency.
-
-**Academic contests:** Brazilian Astronomy Olympiad (3× gold medalist); UN mock debating at FAAP/SP.
-
-**Side projects:** Co-created [Prompt Riddle](https://promptriddle.com), an indie enigma-solving game.
-
-**Sports:** Brazilian jiu-jitsu, futsal.
-
-**Rocketry:** Launched and recovered a rocket that reached a 10,000 ft apogee as part of the ITA's Rocket Design team during the 2017 [IREC](https://www.soundingrocket.org/what-is-irec.html) competition in Las Cruces, NM, USA. Responsible for the aerodynamics of the rocket and helped build the GPS localization module.
