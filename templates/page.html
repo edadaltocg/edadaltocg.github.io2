@@ -32,12 +32,18 @@
     {% endfor %}
   </p>
   {% endif %}
-  <div></div>
+  {% block begin_article %}
+  {% endblock begin_article %}
   {{ page.content | safe }}
+
+{% block end_article %}
+{% endblock end_article %}
+
 </article>
+
+{% block after_article %}
+{% endblock after_article %}
 
 {% endblock content %}
 
-{% block after_content %}
-{% endblock after_content%}
 

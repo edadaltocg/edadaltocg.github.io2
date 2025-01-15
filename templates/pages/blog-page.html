@@ -1,7 +1,87 @@
 {% extends "page.html" %}
 
-{% block after_content %}
+{% block after_header %}
+<nav>
+  <a href="{{ config.base_url }}blog">&LeftArrow; Blog</a>
+</nav>
+{% endblock after_header %}
+
+{% block begin_article %}
+
+{% if page.toc %}
+    <h3>Content</h3>
+    <ul>
+    {% for h2 in page.toc %}
+        <li>
+            <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+            {% if h2.children %}
+                <ul>
+                    {% for h3 in h2.children %}
+                        <li>
+                            <a href="{{ h3.permalink | safe }}">{{ h3.title }}</a>
+                            {% if h3.children %}
+                                <ul>
+                                    {% for h4 in h3.children %}
+                                        <li>
+                                            <a href="{{ h4.permalink | safe }}">{{ h4.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+{% endblock begin_article %}
+
+{% block end_article %}
+{% set citations = load_data(path=page.colocated_path ~ "references.bib", format="bibtex", required=false) %}
+{% if citations %}
+    <div id="references">
+    {% set has_references = citations.bibliographies | length > 0 %}
+    {% if has_references %}
+        <h2>References</h2>
+        <dl>
+        {% for citation in citations.bibliographies %}
+            {{ macros::ref(bibliography=citation,num=loop.index) }}
+        {% endfor %}
+        </dl>
+    {% endif %}
+    </div>
+{% endif %}
+{% endblock end_article %}
+
+{% block after_article %}
+<hr>
+<h2>Comments</h2>
 <div id="disqus_thread"></div>
+{% endblock after_article %}
+
+{% block after_content %}
+<script>
+    // https://github.com/KaTeX/KaTeX/blob/main/docs/autorender.md
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            // customised options
+            // • auto-render specific keys, e.g.:
+                delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                // {left: '\(', right: '\)', display: false},
+                // {left: '\[', right: '\]', display: true},
+                {left: "\begin{equation}", right: "\end{equation}", display: true},
+                {left: "\begin{align}", right: "\end{align}", display: true},
+            ],
+            // • rendering keys, e.g.:
+            throwOnError : false
+        });
+    });
+</script>
 <script>
   /**
 TODO:
@@ -22,4 +102,79 @@ TODO:
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
     Disqus.</a></noscript>
+  <!-- <script type="module"> -->
+  <!--   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs'; -->
+  <!--   mermaid.initialize({ startOnLoad: true, theme: 'base', darkMode: true }); -->
+  <!-- </script> -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  // mermaid.initialize({ startOnLoad: false });
+  // await mermaid.run({
+  //     querySelector: '.mermaid',
+  //     postRenderCallback: (id) => {
+  //         const container = document.getElementById("diagram-container");
+  //         const svgElement = container.querySelector("svg");
+  //
+  //         // Initialize Panzoom
+  //         const panzoomInstance = Panzoom(svgElement, {
+  //             maxScale: 5,
+  //             minScale: 0.5,
+  //             step: 0.1,
+  //         });
+  //
+  //         // Add mouse wheel zoom
+  //         container.addEventListener("wheel", (event) => {
+  //             panzoomInstance.zoomWithWheel(event);
+  //         });
+  //     }
+  // });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    pseudocode.renderElement(document.getElementById("algorithm"));
+    pseudocode.renderClass("pseudocode");
+  })
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Find all the <pre> blocks containing <code>
+  const preBlocks = document.querySelectorAll('pre code');
+
+  // Iterate over each <code> block
+  preBlocks.forEach(codeBlock => {
+    // The <pre> element containing the <code>
+    const preElement = codeBlock.parentNode;
+
+    // Create a button
+    const button = document.createElement('button');
+    button.className = 'copy-btn';
+
+    // Add Font Awesome copy icon to the button
+    const icon = document.createElement('i');
+    icon.className = 'fas fa-copy';
+    button.appendChild(icon);
+
+    // Attach the click event for copying content
+    button.addEventListener('click', () => {
+      // Create a temporary text area for copying
+      const tempTextArea = document.createElement('textarea');
+      tempTextArea.value = codeBlock.innerText;
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempTextArea);
+
+      // Indicate that the copy was successful by changing the icon to a check
+      icon.className = 'fas fa-check';
+      setTimeout(() => icon.className = 'fas fa-copy', 2000);
+    });
+
+    // Insert the button directly into the <pre> element
+    preElement.appendChild(button);
+  });
+});
+</script>
+
 {% endblock after_content%}
